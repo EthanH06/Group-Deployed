@@ -40,16 +40,16 @@ window.onload = function() {
     context = board.getContext("2d");
 
     birdImg = new Image();
-    birdImg.src = "./flappybird.png";
+    birdImg.src = "https://github.com/EthanH06/Group-Deployed/blob/main/flappybird.png";
     birdImg.onload = function() {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
 
     topPipeImg = new Image();
-    topPipeImg.src = "./toppipe.png";
+    topPipeImg.src = "https://github.com/EthanH06/Group-Deployed/blob/main/toppipe.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "./bottompipe.png";
+    bottomPipeImg.src = "https://github.com/EthanH06/Group-Deployed/blob/main/bottompipe.png";
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500);
